@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mokepon 🔥💧🌍</h1>
+    </header>
+    <main>
+        <section id="seleccionar-mascota">
+            <h2>Selecciona tu mascota</h2>
+            <!-- Imágenes de las mascotas para seleccionar -->
+            <label for="hipodoge"><img src="img/Hipodoge.png" alt="Hipodoge" class="mascota-img" id="hipodoge-img"></label>
+            <input type="radio" name="mascotas" id="hipodoge">
+            
+            <label for="capipepo"><img src="img/Capipepo.png" alt="Capipepo" class="mascota-img" id="capipepo-img"></label>
+            <input type="radio" name="mascotas" id="capipepo">
+            
+            <label for="ratigueya"><img src="img/Ratigueya.png" alt="Ratigueya" class="mascota-img" id="ratigueya-img"></label>
+            <input type="radio" name="mascotas" id="ratigueya">
+            
+            <button id="boton-mascota">Seleccionar Mascota</button>
+        </section>
+        <section id="mascota-jugador-info" style="display:none;">
+            <h2>Tu mascota es <span id="mascota-jugador"></span></h2>
+            <!-- Imagen de la mascota seleccionada en movimiento -->
+            <img src="" alt="Mascota Jugador" class="mascota-img-movimiento" id="mascota-jugador-img">
+        </section>        
+        <section id="Seleccionar-ataque" style="display:none;">
+            <h2>Elige tu ataque</h2>
+            <button id="boton-fuego" disabled>Fuego🔥</button>
+            <button id="boton-agua" disabled>Agua💧</button>
+            <button id="boton-tierra" disabled>Tierra🌍</button>
+        </section>
+        <section id="mensajes">
+            <p></p>
+        </section>
+        <section id="vidas">
+            <p>Tu mascota tiene <span id="vidas-jugador">3</span> vidas</p>
+            <p>La mascota del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+        </section>
+        <section id="reiniciar" style="display:none;">
+            <button id="Reiniciar" disabled>Reiniciar Juego</button>
+        </section>
+    </main>
+    <footer>
+        <p>©Guillermo Martinez, 2024 Mokepon</p>
+    </footer>
+    <script src="js/mokepon.js"></script>
+</body>
+</html>

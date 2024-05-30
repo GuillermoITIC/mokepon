@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+main {
+    margin-top: 20px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+section {
+    margin-bottom: 20px;
+}
+
+/* Añadimos una animación para mover las mascotas */
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px); /* Movimiento hacia adelante */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Estilizamos las mascotas */
+.mascota-img {
+    width: 100px; /* Tamaño de la imagen */
+    height: auto;
+    margin: 10px; /* Espacio entre las imágenes */
+}
+
+/* Estilo adicional para la imagen de la mascota en movimiento */
+.mascota-img-movimiento {
+    width: 100px; /* Tamaño de la imagen */
+    height: auto;
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    animation: move 1s infinite; /* Aplicamos la animación de movimiento infinito */
+}
